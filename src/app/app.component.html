@@ -1,0 +1,26 @@
+<div class="container">
+  <h1>
+    {{title}}
+  </h1>
+
+  <div class="form-group row">
+    <label class="col-lg-2" style="line-height: 33px;padding-left: 50px;">
+      Number of boxes:
+    </label>
+    <div class="col-lg-4">
+      <input class="form-control" [(ngModel)]="boxQuantity" placeholder="Number Of Boxes"/>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <div class="offset-sm-2 col-lg-2">
+      <button class="btn btn-primary" (click)="genrateArray()"> Draw boxes</button>
+    </div>
+  </div>
+
+  <div *ngFor="let qty of arr">
+    <!--<app-box-wrapper [boxId]="qty"></app-box-wrapper>-->
+    <app-box [boxId]="qty"></app-box>
+  </div>
+
+</div>

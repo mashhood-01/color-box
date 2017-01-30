@@ -1,0 +1,7 @@
+p {
+  border-radius: 30px;
+  border: 1px black solid;
+  max-width: 50%;
+  height: 115px;
+  margin-bottom: 50px;
+}
